@@ -12,6 +12,7 @@ import SnowReport from '../assets/Snowreport.png';
 import snowreportGIF from '../assets/snowreportGIF.gif';
 import searchtripGIF from '../assets/searchtripGIF.gif';
 import chatGIF from '../assets/chatGIF.gif';
+import RiderTripView from '../assets/RiderTripView.png';
 
 // Import Spectacle Core tags
 import {
@@ -52,7 +53,7 @@ preloader(images);
 
 const theme = createTheme({
   primary: "#000000",
-  secondary: "#37474f",
+  secondary: "#263238",
   tertiary: "#FFFFFF",
   quartenary: "#CECECE"
 }, {
@@ -69,8 +70,8 @@ export default class Presentation extends React.Component {
             <img src={ TramLogoWhite }/>
           </Heading>
         </Slide>
-        <Slide transition={["fade"]} bgColor="primary">
-          <Heading size={1} caps textColor="secondary" align="flex-start">WHO? WHY?</Heading>
+        <Slide transition={["fade"]} bgColor="secondary">
+          <Heading size={1} caps textColor="tertiary" align="flex-start">WHO? WHY?</Heading>
             <Text size={2} textColor='tertiary'>To Provide Skiers, Snowboarders, and Mountain Lovers a way to carpool in order to reduce traffic and keep Utah's air clean.</Text>
         </Slide>
         <Slide transition={["fade"]} bgImage={UserProfileNoJoinedTrip}>
@@ -87,24 +88,42 @@ export default class Presentation extends React.Component {
         </Slide>
         <Slide transition={["fade"]} bgImage={UserProfileJoinedTrip}>
         </Slide>
+        <Slide transition={["fade"]} bgImage={RiderTripView}>
+        </Slide>
         <Slide transition={["fade"]} bgImage={chatScreenShot}>
         </Slide>
         <Slide transition={["fade"]} bgImage={chatGIF}>
         </Slide>
         <Slide transition={["zoom"]} bgColor="secondary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
-            <Text>CHALLENGES</Text>
+            <Text textColor="tertiary">TECHNOLOGY STACK</Text>
           </Heading>
-            <Text>key point</Text>
+            <List>
+              <Appear><ListItem style={{fontSize:'100px'}} textColor="tertiary">APIS: SkiUtah, GoogleMaps</ListItem></Appear>
+              <Appear><ListItem style={{fontSize:'100px'}} textColor="tertiary">BACKEND: Ruby on Rails</ListItem></Appear>
+              <Appear><ListItem style={{fontSize:'100px'}} textColor="tertiary">FRONTEND: React, Redux, Javascript</ListItem></Appear>
+
+            </List>
         </Slide>
         <Slide transition={["zoom"]} bgColor="secondary">
           <Heading size={1} fit caps lineHeight={1} textColor="primary">
-            <Text>WHAT'S NEXT?</Text>
+            <Text textColor="tertiary">SCOPE OF THE PROJECT</Text>
+          </Heading>
+            <List>
+              <Appear><ListItem style={{fontSize:'90px'}} textColor="tertiary">IMPROVE USER EXPERIENCE</ListItem></Appear>
+              <Appear><ListItem style={{fontSize:'90px'}} textColor="tertiary">PRIORITIZE / DELETE COMPONENTS</ListItem></Appear>
+              <Appear><ListItem style={{fontSize:'90px'}} textColor="tertiary">REORGANIZED</ListItem></Appear>
+
+            </List>
+        </Slide>
+        <Slide transition={["zoom"]} bgColor="secondary">
+          <Heading size={1} fit caps lineHeight={1} textColor="primary">
+            <Text textColor="tertiary">WHAT'S NEXT?</Text>
           </Heading>
           <List>
-            <Appear><ListItem textColor="primary">Monetizing Our App</ListItem></Appear>
-            <Appear><ListItem textColor="primary">Partnering With Interested Businesses</ListItem></Appear>
-            <Appear><ListItem textColor="primary">Developing Additional Features</ListItem></Appear>
+            <Appear><ListItem style={{fontSize:'90px'}} textColor="tertiary">Monetizing Our App</ListItem></Appear>
+            <Appear><ListItem style={{fontSize:'90px'}} textColor="tertiary">Partnering With Interested Businesses</ListItem></Appear>
+            <Appear><ListItem style={{fontSize:'90px'}} textColor="tertiary">Developing Additional Features</ListItem></Appear>
           </List>
         </Slide>
         <Slide transition={["zoom"]} bgColor="primary">
